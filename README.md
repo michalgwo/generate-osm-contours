@@ -25,7 +25,7 @@ Once you have your user and login, create a file named .earthexplorerCredentials
 ```
 USER=your_user_name
 PASSWORD=your_password
-CONTOUR_STEP=20         // in feet
+CONTOUR_STEP=20         // default: 20 meters
 ```
 
 and pass it to the docker run as environment file.
