@@ -1,5 +1,5 @@
 # Use latest Debian
-FROM debian:latest
+FROM debian:11
 LABEL author="Irfan Ismail <https://irfanismail.com>"
 
 
@@ -9,6 +9,9 @@ RUN apt-get update -y \
 
 # Prepare the dependencies required by phyghtmap
 RUN apt-get install python3-setuptools -y
+RUN apt-get install python3-matplotlib -y
+RUN apt-get install python3-bs4 -y
+RUN apt-get install python3-numpy -y
 
 # Download & install latest phyghtmap
 RUN cd /tmp \

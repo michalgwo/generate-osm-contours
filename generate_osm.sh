@@ -12,7 +12,7 @@ function generate_pbf() {
 			-0 \
 			--pbf \
 			--polygon="$poly_file" \
-			--source=view1,view3,srtm3 \
+			--source=$SOURCES \
 			--earthexplorer-user="$USER" \
 			--earthexplorer-password="$PASSWORD"
 	mv *.pbf "$IMPORT_DIR"/
